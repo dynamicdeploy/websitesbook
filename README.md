@@ -10,6 +10,7 @@ The question that I have tried to answer through this book is, "What does it tak
 You will enjoy the examples of integrating websites with other cloud services such as Storage, Virtual Machines, and Service Bus. Throughout this book, I have provided step-by-step instructions explaining the significance of each feature and the optimal way of using it. The Web Site Capability Model discussed in this book will help you visualize the capabilities and migration risks of your websites. The Storage Object Distribution pattern will open-up your creative mind in thinking differently when designing cloud applications at scale, believe me it's different.
 Whether you are a novice or an experienced developer, you will learn something new after reading this book. The benefits are not limited to building websites, but in building secure, reliable, and high-performing web solutions that make a difference in your business and career. So, Jump In!
 Some of the covered topics that you will love are:
+
 1)	Windows Azure Web Sites system architecture
 2)	Continuous deployments with Visual Studio Online and GitHub
 3)	Accessing Windows Azure Storage service
