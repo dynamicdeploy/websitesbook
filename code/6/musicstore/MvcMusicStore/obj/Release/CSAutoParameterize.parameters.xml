@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="MusicStoreEntities-Web.config Connection String" description="MusicStoreEntities Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:xnb4zlmcfg.database.windows.net,1433;Database=mvcmusic;User ID=user@xnb4zlmcfg;Password=Pass@word1;Trusted_Connection=False;Encrypt=True;Connection Timeout=60;MultipleActiveResultSets=True;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\tejaswi\\publications\\WAWS\\code\\6\\musicstore\\MvcMusicStore\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MusicStoreEntities']/@connectionString" />
+  </parameter>
+</parameters>

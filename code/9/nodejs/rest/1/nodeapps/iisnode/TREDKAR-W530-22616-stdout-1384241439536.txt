@@ -1,0 +1,5 @@
+Express server listening on port \\.\pipe\0ed91cc4-13ee-475d-a352-feb6996bd0ee
+[90mGET / [32m200 [90m86ms - 170[0m
+Connected to 'pkgsdb' database
+The 'pkgsdb' collection doesn't exist. Creating it with sample data...
+[90mGET /pkgs/ [32m200 [90m419ms - 544[0m

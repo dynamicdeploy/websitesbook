@@ -1,0 +1,22 @@
+Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters
+    at new ObjectID (C:\Users\tredkar\Documents\My Web Sites\nodeapps\node_modules\mongodb\node_modules\bson\lib\bson\objectid.js:33:11)
+    at C:\Users\tredkar\Documents\My Web Sites\nodeapps\routes\pkgs.js:26:35
+    at Db.collection (C:\Users\tredkar\Documents\My Web Sites\nodeapps\node_modules\mongodb\lib\mongodb\db.js:488:44)
+    at exports.findById (C:\Users\tredkar\Documents\My Web Sites\nodeapps\routes\pkgs.js:25:8)
+    at callbacks (C:\Users\tredkar\Documents\My Web Sites\nodeapps\node_modules\express\lib\router\index.js:161:37)
+    at param (C:\Users\tredkar\Documents\My Web Sites\nodeapps\node_modules\express\lib\router\index.js:135:11)
+    at param (C:\Users\tredkar\Documents\My Web Sites\nodeapps\node_modules\express\lib\router\index.js:132:11)
+    at pass (C:\Users\tredkar\Documents\My Web Sites\nodeapps\node_modules\express\lib\router\index.js:142:5)
+    at Router._dispatch (C:\Users\tredkar\Documents\My Web Sites\nodeapps\node_modules\express\lib\router\index.js:170:5)
+    at Object.router (C:\Users\tredkar\Documents\My Web Sites\nodeapps\node_modules\express\lib\router\index.js:33:10)
+Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters
+    at new ObjectID (C:\Users\tredkar\Documents\My Web Sites\nodeapps\node_modules\mongodb\node_modules\bson\lib\bson\objectid.js:33:11)
+    at C:\Users\tredkar\Documents\My Web Sites\nodeapps\routes\pkgs.js:26:35
+    at Db.collection (C:\Users\tredkar\Documents\My Web Sites\nodeapps\node_modules\mongodb\lib\mongodb\db.js:488:44)
+    at exports.findById (C:\Users\tredkar\Documents\My Web Sites\nodeapps\routes\pkgs.js:25:8)
+    at callbacks (C:\Users\tredkar\Documents\My Web Sites\nodeapps\node_modules\express\lib\router\index.js:161:37)
+    at param (C:\Users\tredkar\Documents\My Web Sites\nodeapps\node_modules\express\lib\router\index.js:135:11)
+    at param (C:\Users\tredkar\Documents\My Web Sites\nodeapps\node_modules\express\lib\router\index.js:132:11)
+    at pass (C:\Users\tredkar\Documents\My Web Sites\nodeapps\node_modules\express\lib\router\index.js:142:5)
+    at Router._dispatch (C:\Users\tredkar\Documents\My Web Sites\nodeapps\node_modules\express\lib\router\index.js:170:5)
+    at Object.router (C:\Users\tredkar\Documents\My Web Sites\nodeapps\node_modules\express\lib\router\index.js:33:10)
