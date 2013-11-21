@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="AD_AudienceUriAppSetting" description="AD Audience Uri App Setting" defaultValue="https://dynamicdeployllc.onmicrosoft.com/o365singlesignon" tags="AD_AudienceUriAppSetting">
+    <parameterEntry kind="XmlFile" scope="C:\\tejaswi\\publications\\WAWS\\code\\9\\o365singlesignon\\o365singlesignon\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:AudienceUri']/@value" />
+  </parameter>
+  <parameter name="AD_RealmAppSetting" description="AD Realm App Setting" defaultValue="https://dynamicdeployllc.onmicrosoft.com/o365singlesignon" tags="AD_RealmAppSetting">
+    <parameterEntry kind="XmlFile" scope="C:\\tejaswi\\publications\\WAWS\\code\\9\\o365singlesignon\\o365singlesignon\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:Realm']/@value" />
+  </parameter>
+  <parameter name="AD_APPIDUri" description="AD AppIDUri" defaultValue="APPIDUri" tags="ADrealmUri">
+    <parameterEntry kind="XmlFile" scope="C:\\tejaswi\\publications\\WAWS\\code\\9\\o365singlesignon\\o365singlesignon\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/system.identityModel/identityConfiguration/audienceUris/add[@value='APPIDUri']/@value" />
+    <parameterEntry kind="XmlFile" scope="C:\\tejaswi\\publications\\WAWS\\code\\9\\o365singlesignon\\o365singlesignon\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/system.identityModel.services/federationConfiguration/wsFederation[@issuer='https://login.windows.net/dynamicdeployllc.onmicrosoft.com/wsfed']/@realm" />
+  </parameter>
+</parameters>

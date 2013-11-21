@@ -1,0 +1,4 @@
+Express server listening on port \\.\pipe\4041fe07-b489-49cd-bc7b-716f11455c0b
+[90mGET / [32m200 [90m31ms - 170[0m
+Connected to 'pkgsdb' database
+[90mGET /pkgs/ [32m200 [90m3812ms - 5.07mb[0m

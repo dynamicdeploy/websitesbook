@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\tejaswi\publications\WAWS\code\9\o365singlesignon\o365singlesignon\obj\Release\Package\PackageTmp" managedRuntimeVersion="v4.0" />
+  <setAcl path="C:\tejaswi\publications\WAWS\code\9\o365singlesignon\o365singlesignon\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="C:\tejaswi\publications\WAWS\code\9\o365singlesignon\o365singlesignon\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+  <setAcl path="C:\tejaswi\publications\WAWS\code\9\o365singlesignon\o365singlesignon\obj\Release\Package\PackageTmp\App_Data" setAclResourceType="Directory" setAclAccess="Write" />
+</sitemanifest>

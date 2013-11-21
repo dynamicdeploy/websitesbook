@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>iisnode logs</title>
+    <style type="text/css">
+        body
+        {
+            font-family: "Trebuchet MS" , Arial, Helvetica, sans-serif;
+        }
+        table
+        {
+            border-collapse: collapse;
+        }
+        td, th
+        {
+            border: 1px solid lightgray;
+            padding: 3px 7px 2px 7px;
+        }
+        th
+        {
+            text-align: left;
+            padding-top: 5px;
+            padding-bottom: 4px;
+            background-color: Gray;
+            color: #ffffff;
+        }
+        td.stderr
+        {
+            color: Red;
+        }
+    </style>
+</head>
+<body>
+    <table id="logFilesTable">
+        <tr>
+            <th>
+                Computer name
+            </th>
+            <th>
+                PID
+            </th>
+            <th>
+                Type
+            </th>
+            <th>
+                Created
+            </th>
+            <th>
+                Link
+            </th>
+        </tr>
+    </table>
+    <p id="lastUpdated"></p>
+    <script type="text/javascript">
+
+        // this is replaced with actual data at runtime by code in interceptor.js
+        var logFiles = [{"file":"TREDKAR-W530-12564-stdout-1384277278516.txt","computername":"TREDKAR-W530","pid":12564,"type":"stdout","created":1384277278516},{"file":"TREDKAR-W530-20600-stdout-1384279299502.txt","computername":"TREDKAR-W530","pid":20600,"type":"stdout","created":1384279299502},{"file":"TREDKAR-W530-22452-stdout-1384279756074.txt","computername":"TREDKAR-W530","pid":22452,"type":"stdout","created":1384279756074},{"file":"TREDKAR-W530-22812-stdout-1384276393444.txt","computername":"TREDKAR-W530","pid":22812,"type":"stdout","created":1384276393444},{"file":"TREDKAR-W530-23836-stdout-1384277380748.txt","computername":"TREDKAR-W530","pid":23836,"type":"stdout","created":1384277380748},{"file":"TREDKAR-W530-23920-stdout-1384277615416.txt","computername":"TREDKAR-W530","pid":23920,"type":"stdout","created":1384277615416},{"file":"TREDKAR-W530-24580-stdout-1384279081932.txt","computername":"TREDKAR-W530","pid":24580,"type":"stdout","created":1384279081932},{"file":"TREDKAR-W530-25536-stdout-1384278600509.txt","computername":"TREDKAR-W530","pid":25536,"type":"stdout","created":1384278600509},{"file":"TREDKAR-W530-25640-stdout-1384279468762.txt","computername":"TREDKAR-W530","pid":25640,"type":"stdout","created":1384279468762},{"file":"TREDKAR-W530-25832-stdout-1384278376367.txt","computername":"TREDKAR-W530","pid":25832,"type":"stdout","created":1384278376367},{"file":"TREDKAR-W530-25864-stdout-1384279936991.txt","computername":"TREDKAR-W530","pid":25864,"type":"stdout","created":1384279936991},{"file":"TREDKAR-W530-26396-stdout-1384278510057.txt","computername":"TREDKAR-W530","pid":26396,"type":"stdout","created":1384278510057},{"file":"TREDKAR-W530-26824-stdout-1384280552763.txt","computername":"TREDKAR-W530","pid":26824,"type":"stdout","created":1384280552763},{"file":"TREDKAR-W530-27400-stdout-1384282535316.txt","computername":"TREDKAR-W530","pid":27400,"type":"stdout","created":1384282535316},{"file":"TREDKAR-W530-27948-stdout-1384279558707.txt","computername":"TREDKAR-W530","pid":27948,"type":"stdout","created":1384279558707},{"file":"TREDKAR-W530-28592-stdout-1384278779181.txt","computername":"TREDKAR-W530","pid":28592,"type":"stdout","created":1384278779181},{"file":"TREDKAR-W530-29724-stdout-1384329892456.txt","computername":"TREDKAR-W530","pid":29724,"type":"stdout","created":1384329892456},{"file":"TREDKAR-W530-3136-stdout-1384278950832.txt","computername":"TREDKAR-W530","pid":3136,"type":"stdout","created":1384278950832},{"file":"TREDKAR-W530-33996-stdout-1384329879597.txt","computername":"TREDKAR-W530","pid":33996,"type":"stdout","created":1384329879597},{"file":"TREDKAR-W530-7960-stderr-1384277206767.txt","computername":"TREDKAR-W530","pid":7960,"type":"stderr","created":1384277206767},{"file":"TREDKAR-W530-7960-stdout-1384277206693.txt","computername":"TREDKAR-W530","pid":7960,"type":"stdout","created":1384277206693}];
+        var lastUpdated = 1384329892697;
+        var date = new Date();
+
+        date.setTime(lastUpdated);
+        document.getElementById('lastUpdated').innerHTML = 'Index was last updated ' + date;
+
+        logFiles.sort(function (a, b) {
+            return b.created - a.created;
+        });
+
+        var logFilesTable = document.getElementById("logFilesTable");
+        for (var i = 0; i < logFiles.length; i++) {
+            var logFile = logFiles[i];
+            date.setTime(logFile.created);
+            var row = logFilesTable.insertRow(-1);
+            var computerNameCell = row.insertCell(0);
+            var pidCell = row.insertCell(1);
+            var typeCell = row.insertCell(2);
+            var dateCell = row.insertCell(3);
+            var logCell = row.insertCell(4);
+            computerNameCell.innerHTML = logFile.computername;
+            pidCell.innerHTML = logFile.pid.toString();
+            typeCell.innerHTML = logFile.type;
+            typeCell.setAttribute('class', logFile.type);
+            dateCell.innerHTML = date.toString();
+            logCell.innerHTML = '<a href="' + logFile.file + '">log</a>';
+        };
+
+    </script>
+</body>
+</html>

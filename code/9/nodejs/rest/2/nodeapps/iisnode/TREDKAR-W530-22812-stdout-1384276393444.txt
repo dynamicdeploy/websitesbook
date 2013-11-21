@@ -1,0 +1,6 @@
+Express server listening on port \\.\pipe\b090c045-c9c7-4b7a-b8db-cf35f75f17cf
+Connected to 'pkgsdb' database
+The 'pkgsdb' collection doesn't exist. Creating it with sample data...
+[90mGET /pkgs.js/debug/ [33m404 [90m11ms[0m
+[90mGET /routes/pkgs.js/debug/ [33m404 [90m5ms[0m
+[90mGET /pkgs.js/debug/ [33m404 [90m1ms[0m
